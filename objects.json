@@ -1,0 +1,47 @@
+{
+  "objects" : {
+    "queryPipelines" : [ {
+      "id" : "test",
+      "stages" : [ {
+        "type" : "facet",
+        "id" : "403d4c9c-16fa-423a-8b54-9207e83d5ea6",
+        "fieldFacets" : [ {
+          "field" : "customer_email_s",
+          "minCount" : 1,
+          "missing" : false
+        }, {
+          "field" : "ri_id",
+          "minCount" : 1,
+          "missing" : false
+        } ],
+        "type" : "facet",
+        "skip" : false,
+        "licensed" : true,
+        "secretSourceStageId" : "403d4c9c-16fa-423a-8b54-9207e83d5ea6",
+        "properties" : {
+          "autoCreated" : true
+        }
+      }, {
+        "type" : "solr-query",
+        "id" : "68f24fb4-9942-41a3-ad57-c0db3e69f1be",
+        "httpMethod" : "POST",
+        "allowFederatedSearch" : false,
+        "type" : "solr-query",
+        "skip" : false,
+        "responseSignalsEnabled" : true,
+        "licensed" : true,
+        "secretSourceStageId" : "68f24fb4-9942-41a3-ad57-c0db3e69f1be"
+      } ],
+      "properties" : {
+        "secretSourcePipelineId" : "BBBY"
+      }
+    } ]
+  },
+  "metadata" : {
+    "formatVersion" : "1",
+    "exportedBy" : "default-subject",
+    "exportedDate" : "2019-10-10T22:00:57.260Z",
+    "fusionVersion" : "4.2.1",
+    "fusionGuid" : "0e8f6ea8-d91d-4f12-b543-b61c886dfc5a"
+  }
+}
